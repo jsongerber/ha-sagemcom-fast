@@ -62,9 +62,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry):
         host=host,
         username=username,
         password=password,
-        authentication_method=EncryptionMethod(encryption_method),
+        authentication_method=EncryptionMethod.MD5,
         session=session,
-        ssl=ssl,
     )
 
     try:

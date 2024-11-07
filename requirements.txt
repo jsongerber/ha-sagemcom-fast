@@ -1,1 +1,1 @@
-sagemcom_api==1.4.1
+sagemcom_api==git+https://github.com/jsongerber/python-sagemcom-api@b976d5c3d58d5a8313e52d5efe1596d08bace253

@@ -49,7 +49,6 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             username=self._username,
             password=password,
             session=session,
-            ssl=ssl,
         )
 
         user_input[CONF_ENCRYPTION_METHOD] = await client.get_encryption_method()

@@ -1,26 +1,21 @@
 {
-  "domain": "sagemcom_fast",
-  "name": "Sagemcom F@st",
-  "codeowners": [
-    "@imicknl",
-    "@arunpoudel"
-  ],
-  "config_flow": true,
-  "documentation": "https://github.com/imicknl/ha-sagemcom-fast",
-  "iot_class": "local_polling",
-  "issue_tracker": "https://github.com/imicknl/ha-sagemcom-fast/issues",
-  "requirements": [
-    "sagemcom_api==1.4.1"
-  ],
-  "ssdp": [
-    {
-      "deviceType": "urn:schemas-wifialliance-org:device:WFADevice:1",
-      "manufacturer": "Sagemcom Broadband SAS"
-    },
-    {
-      "deviceType": "urn:schemas-upnp.org:device:InternetGatewayDevice:1",
-      "manufacturer": "Sagemcom Broadband SAS"
-    }
-  ],
-  "version": "0.3.6"
+	"domain": "sagemcom_fast",
+	"name": "Sagemcom F@st",
+	"codeowners": ["@imicknl", "@arunpoudel"],
+	"config_flow": true,
+	"documentation": "https://github.com/imicknl/ha-sagemcom-fast",
+	"iot_class": "local_polling",
+	"issue_tracker": "https://github.com/imicknl/ha-sagemcom-fast/issues",
+	"requirements": ["git+https://github.com/jsongerber/python-sagemcom-api@b976d5c3d58d5a8313e52d5efe1596d08bace253"],
+	"ssdp": [
+		{
+			"deviceType": "urn:schemas-wifialliance-org:device:WFADevice:1",
+			"manufacturer": "Sagemcom Broadband SAS"
+		},
+		{
+			"deviceType": "urn:schemas-upnp.org:device:InternetGatewayDevice:1",
+			"manufacturer": "Sagemcom Broadband SAS"
+		}
+	],
+	"version": "0.3.6"
 }
